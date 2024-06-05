@@ -21,7 +21,7 @@ app.use("/curso-estudiante", routeCursosEstudiantes)
 async function main(){
     try {
      await AppDataSource.initialize();
-       // console.log("Se conecto de forma correcta a la bd!")
+     console.log("Se conecto de forma correcta a la bd!")
         app.listen(port, ()=>{
             console.log(`Sever escuchando en el puerto ${port}`)
         })
